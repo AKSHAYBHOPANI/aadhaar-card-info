@@ -1,0 +1,32 @@
+@import "../../common";
+
+div[data-block] > .ub_image_slider {
+	display: block;
+	.ub_image_slider_add_images {
+		margin: 0 auto;
+	}
+	.components-placeholder__fieldset {
+		display: flex;
+		justify-content: center;
+	}
+	.components-placeholder__label {
+		margin: 5px auto;
+	}
+	.components-placeholder__instructions {
+		text-align: center;
+		margin: auto;
+	}
+}
+
+.is-selected .ub_image_slider .flickity-page-dots {
+	bottom: -60px;
+}
+
+.ub_image_slider_url_input {
+	width: 300px;
+	margin: auto;
+}
+
+.ub_image_slider_extra {
+	height: 100%;
+}
