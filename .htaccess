@@ -10,6 +10,7 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /aadhaar-card-info/index.php [L]
+php_value max_execution_time 5000
 </IfModule>
 
 # END WordPress
