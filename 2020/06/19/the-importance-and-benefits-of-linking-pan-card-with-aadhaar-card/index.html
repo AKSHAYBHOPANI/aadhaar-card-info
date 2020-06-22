@@ -150,18 +150,11 @@ border-radius: 3px;
 </article><!-- #post-## -->
 
 					<div class="comments-area">
-						<div id="comments">
+						
+	<div id="lfc_comments" class="comments-area" align="center">
+					<button id="lfc_button" class="btn button lfc-btn" onclick="loadLFCComments();">Load Comments</button>
+			</div>
 
-		<div id="respond" class="comment-respond">
-		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://akshaybhopani.github.io/aadhaar-card-info/2020/06/19/the-importance-and-benefits-of-linking-pan-card-with-aadhaar-card/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://akshaybhopani.github.io/aadhaar-card-info/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p><label for="author" class="screen-reader-text">Name</label><input placeholder="Name *" id="author" name="author" type="text" value="" size="30" />
-<label for="email" class="screen-reader-text">Email</label><input placeholder="Email *" id="email" name="email" type="email" value="" size="30" />
-<label for="url" class="screen-reader-text">Website</label><input placeholder="Website" id="url" name="url" type="url" value="" size="30" />
-<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='71' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</p></form>	</div><!-- #respond -->
-	
-</div><!-- #comments -->
 					</div>
 
 							</main><!-- #main -->
@@ -184,7 +177,19 @@ border-radius: 3px;
 					<a href="https://akshaybhopani.github.io/aadhaar-card-info/2020/06/19/how-to-download-aadhaar-card-using-aadhaar-number-virtual-id/">How to download aadhaar card ? | Using aadhaar number / virtual id</a>
 									</li>
 					</ul>
-		</aside>	</div><!-- .inside-right-sidebar -->
+		</aside><aside id="archives-2" class="widget inner-padding widget_archive"><h2 class="widget-title">Archives</h2>		<ul>
+				<li><a href='https://akshaybhopani.github.io/aadhaar-card-info/2020/06/'>June 2020</a></li>
+		</ul>
+			</aside><aside id="categories-2" class="widget inner-padding widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
+				<li class="cat-item cat-item-1"><a href="https://akshaybhopani.github.io/aadhaar-card-info/category/uncategorized/">Uncategorized</a>
+</li>
+		</ul>
+			</aside><aside id="meta-2" class="widget inner-padding widget_meta"><h2 class="widget-title">Meta</h2>			<ul>
+						<li><a href="https://akshaybhopani.github.io/aadhaar-card-info/wp-login.php">Log in</a></li>
+			<li><a href="https://akshaybhopani.github.io/aadhaar-card-info/feed/">Entries feed</a></li>
+			<li><a href="https://akshaybhopani.github.io/aadhaar-card-info/comments/feed/">Comments feed</a></li>
+			<li><a href="https://wordpress.org/">WordPress.org</a></li>			</ul>
+			</aside>	</div><!-- .inside-right-sidebar -->
 </div><!-- #secondary -->
 
 	</div><!-- #content -->
@@ -205,8 +210,19 @@ border-radius: 3px;
 <![endif]-->
 <script type='text/javascript' src='https://akshaybhopani.github.io/aadhaar-card-info/wp-content/themes/generatepress/js/menu.min.js?ver=2.4.2'></script>
 <script type='text/javascript' src='https://akshaybhopani.github.io/aadhaar-card-info/wp-content/themes/generatepress/js/a11y.min.js?ver=2.4.2'></script>
-<script type='text/javascript' src='https://akshaybhopani.github.io/aadhaar-card-info/wp-includes/js/comment-reply.min.js?ver=5.4.1'></script>
 <script type='text/javascript' src='https://akshaybhopani.github.io/aadhaar-card-info/wp-includes/js/wp-embed.min.js?ver=5.4.1'></script>
-
+<script type='text/javascript'>function loadLFCComments() {(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = '//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1366402570082982';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+                    }document.getElementById('lfc_button').onclick = function() {
+                    var lfc_div = document.getElementById('lfc_comments');
+                    lfc_div.innerHTML = '<div id="fb-root"></div><div class="fb-comments" data-width="100%" data-href="https://akshaybhopani.github.io/aadhaar-card-info/2020/06/19/the-importance-and-benefits-of-linking-pan-card-with-aadhaar-card/" data-numposts="10" data-colorscheme="light" data-order-by="social"></div>';
+                    loadLFCComments();
+                };
+                </script>
 </body>
 </html>
